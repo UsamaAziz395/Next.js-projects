@@ -42,15 +42,29 @@ export default function WorkoutPlanner() {
 
       </div>
 
-      <div className="relative w-full block md:hidden max-w-[300px] ">
+      {/* <div className="relative w-full block md:hidden max-w-[300px] ">
             <Image
               src="/images/Analysisimage.avif"
               alt="Workout Planner App"
               width={500}
               height={500}
-              className="w-full h-auto object-contain drop-shadow-2xl mx-15 mt-15"
+              className="w-full h-auto object-contain drop-shadow-2xl mx-auto md:mx-0 mt-15"
+
+              
             />
-          </div>
+          </div> */}
+
+               <div
+                      className="  relative  w-full block md:hidden max-w-[300px]  "
+                    >
+                      <Image
+                        src="/images/workoutroutine.avif"
+                        alt="Personalized Workout Plan App"
+                        width={600}
+                        height={800}
+                        className="w-full h-auto object-contain drop-shadow-2xl"
+                      />
+                    </div>
     </section>
   );
 }
