@@ -9,7 +9,7 @@ export default function NewToGymSection() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#1a1c23] text-white py-20 px-6 md:px-16 flex flex-col items-center justify-center font-sans">
+    <section className="min-h-screen bg-black text-white py-20 px-6 md:px-16 flex flex-col items-center justify-center font-sans">
       
       {/* Header Section */}
       <div
