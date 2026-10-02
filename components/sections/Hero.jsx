@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white flex flex-col relative overflow-hidden py-20 z-10">
+    <main className="min-h-screen bg-[#0a0a0a] text-white flex flex-col relative overflow-hidden z-10">
       
     
      <div  
-  className="absolute inset-0 mt-25 z-0 pointer-events-none" style={{ backgroundImage: "url('/images/hero-bg.avif')" }}
+  className="absolute inset-0 mt-10 z-0 pointer-events-none" style={{ backgroundImage: "url('/images/hero-bg.avif')" }}
 ></div>
       
       {/* Main Content Section */}
@@ -16,7 +16,7 @@ export default function Hero() {
         
         {/* Left Side: Text Content */}
         <div data-aos="fade-up"  className="flex-1 flex flex-col justify-center w-full max-w-xl">
-          <h1 className="text-xl md:text-4xl font-extrabold uppercase leading-tight tracking-tight mb-6">
+          <h1 className="text-xl md:text-4xl font-extrabold uppercase leading-tight tracking-tight mb-8">
             AI-Powered <br />
             Personal Training App <br />
             For Gym Beginners
@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="hidden md:block">
             <Link
             href="/onboarding"
-            className="ml-2 rounded-full bg-[#22E6C3] px-8 py-3 text-[18px] font-bold text-black transition hover:bg-[#18ceb0]">
+            className="ml-2 rounded-full bg-[#22E6C3] px-8 py-3  text-[18px] font-bold text-black transition hover:bg-[#18ceb0]">
             Find Your AI Plan
           </Link>
           </div>
@@ -52,7 +52,7 @@ export default function Hero() {
       <div className="md:hidden fixed bottom-0 left-0 w-full p-4 bg-[#0a0a0a]/90 backdrop-blur-sm z-50 flex justify-center border-t border-white/10">
        <Link
             href="/onboarding"
-                 className="bg-[#00e5a0] text-black font-bold text-lg px-8 py-4 rounded-full w-full max-w-sm shadow-[0_0_15px_rgba(0,229,160,0.5)]"> 
+                 className="bg-[#70e7c3] text-black font-bold text-lg px-8 py-4 rounded-full w-full max-w-sm shadow-[0_0_15px_rgba(0,229,160,0.5)]"> 
                        Find Your AI Plan
           </Link>
 

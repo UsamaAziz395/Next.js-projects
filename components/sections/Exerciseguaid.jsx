@@ -55,8 +55,8 @@ export default function ExerciseGuides() {
               src="/images/exerciseguaid.avif"
               alt="Detailed Exercise Guide App"
              width={600}
-              height={1200}
-              className="w-full h-auto object-contain drop-shadow-2xl"
+              height={600}
+              className="w-full h-auto object-contain mx-15 drop-shadow-2xl"
               priority
             />
           </div>

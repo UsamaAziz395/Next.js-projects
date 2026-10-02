@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <AOSProvider>
           <Navbar />
           <main>{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </AOSProvider>
       </body>
     </html>

@@ -46,9 +46,9 @@ export default function WorkoutPlanner() {
             <Image
               src="/images/Analysisimage.avif"
               alt="Workout Planner App"
-              width={600}
-              height={600}
-              className="w-full h-auto object-contain drop-shadow-2xl mx-23 mt-15"
+              width={500}
+              height={500}
+              className="w-full h-auto object-contain drop-shadow-2xl mx-15 mt-15"
             />
           </div>
     </section>

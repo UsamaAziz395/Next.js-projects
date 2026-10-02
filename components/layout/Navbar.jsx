@@ -14,7 +14,7 @@ function Navbar() {
 
       {/* Desktop Navbar*/}
 
-      <div className="mx-auto flex h-[80px] max-w-[1360px] items-center justify-between px-25">
+      <div className="mx-auto flex h-[80px] max-w-[1360px] items-center justify-between px-2 lg:px-25">
 
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -106,7 +106,7 @@ function Navbar() {
 
       {isOpen && (
         <div
-          className=" h-screen border-t border-gray-700 bg-[#1F2025] px-6 py-8 lg:hidden "
+          className=" h-screen border-t border-gray-700 bg-[#1F2025] px-2 py-8 lg:hidden "
         >
 
           <div className="flex flex-col gap-7">
