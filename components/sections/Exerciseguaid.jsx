@@ -50,7 +50,7 @@ export default function ExerciseGuides() {
             /> */}
           </div>
 
-           <div className="relative w-full block md:hidden max-w-[300px]">
+           {/* <div className="relative w-full block md:hidden max-w-[300px]">
             <Image
               src="/images/exerciseguaid.avif"
               alt="Detailed Exercise Guide App"
@@ -59,7 +59,19 @@ export default function ExerciseGuides() {
               className="w-full h-auto object-contain mx-15 drop-shadow-2xl"
               priority
             />
-          </div>
+          </div> */}
+
+            <div
+                                className="relative  w-full block md:hidden max-w-[300px]  "
+                              >
+                                <Image
+                                  src="/images/exerciseguaid.avif"
+                                  alt="Personalized Workout Plan App"
+                                  width={600}
+                                  height={800}
+                                  className="w-full h-auto object-contain drop-shadow-2xl mx-auto md:mx-0"
+                                />
+                              </div>
 
         </div>
 
