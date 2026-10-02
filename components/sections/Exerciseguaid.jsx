@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ExerciseGuides() {
   return (
-    <section className="bg-[#1a1c23] text-white py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-24 font-sans overflow-hidden">
+    <section className="bg-[#1a1c23] text-white py-8 md:py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-24 font-sans overflow-hidden">
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
@@ -50,16 +50,7 @@ export default function ExerciseGuides() {
             /> */}
           </div>
 
-           {/* <div className="relative w-full block md:hidden max-w-[300px]">
-            <Image
-              src="/images/exerciseguaid.avif"
-              alt="Detailed Exercise Guide App"
-             width={600}
-              height={600}
-              className="w-full h-auto object-contain mx-15 drop-shadow-2xl"
-              priority
-            />
-          </div> */}
+         
 
               <div className="relative w-full block md:hidden max-w-[300px] mx-auto mt-8">
                     <Image
