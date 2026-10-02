@@ -14,7 +14,6 @@ import Gardunio from "../../public/images/Gardunio.png"
 import jusbran from "../../public/images/jusbran.png"
 import Okandi from "../../public/images/Okandi.png"
 import Robert from "../../public/images/Robert.jpg"
-// import Diego from "../../public/images/Diego.jpg"
 import appstorelogo from "../../public/images/appstorelogo.svg";
 import playstorelogo from "../../public/images/playstorelogo.svg";
 
@@ -278,7 +277,7 @@ export default function AnimatedCards() {
          {row2Cards.map((card) => (
           <div
             key={card.id}
-            className=" relative flex-shrink-0 w-[280px] md:w-[400px] h-[220px] md:h-[240px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5 transition-colors hover:border-[#5df0c4]">
+            className=" relative flex-shrink-0  w-[420px] h-[220px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5 transition-colors hover:border-[#5df0c4]">
 
             {/* Top: Name + Logo */}
 

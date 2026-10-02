@@ -29,7 +29,6 @@ export default function CTASection() {
 
        
         <Image
-    
           src="/images/Phoneimage.avif"
           alt="Workout App Phones"
           width={900}
