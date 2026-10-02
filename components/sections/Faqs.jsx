@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import React, { useState } from 'react';
@@ -45,7 +43,7 @@ export default function Faqs() {
         
         {/* Header Section */}
         <div data-aos="fade-up" className="text-center mb-12">
-          <h2 className="text-4xl main-font tracking-tight font-bold uppercase">
+          <h2 className= " text-2xl md:text-4xl tracking-tighter font-bold uppercase">
             Frequently Asked Questions
           </h2>
         </div>
@@ -62,7 +60,7 @@ export default function Faqs() {
                 onClick={() => toggleFaq(index)}
                 className="w-full flex items-center justify-between py-5 md:py-6 text-left focus:outline-none"
               >
-                <span className="text-lg md:text-xl font-semibold text-white pr-4">
+                <span className="text-md md:text-xl font-semibold text-white pr-4">
                   {faq.question}
                 </span>
                 

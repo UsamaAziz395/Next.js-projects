@@ -22,21 +22,21 @@ export default function PersonalizedPlan() {
           <h2 className="text-2xl md:text-3xl font-bold uppercase leading-tight tracking-tight text-center md:text-start mb-6 md:mb-8">
             Personalized
             <br className="block md:hidden" />
-            {' '}Workout Plan
+            Workout Plan
           </h2>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
-            No more guessing — just do the workout
+          <p className=" text-sm sm:text-xl md:text-2xl text-center md:text-start font-bold text-white mb-4 md:mb-6">
+            No more guessing — just do the <br className='block md:hidden' />workout
           </p>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-xl">
+          <p className="text-base sm:text-lg leading-tight md:leading-relaxed max-w-xl">
             AI builds you a personalized plan for free — one that works best for you.
             It generates workouts tailored to your goals, strength and training ability,
             past workouts, and gym setup.
 
-            <br /><br />
+            <br className='block md:hidden' />
 
             AI also optimizes sets, reps, and weight for every exercise in every workout.
           </p>

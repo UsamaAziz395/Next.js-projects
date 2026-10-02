@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 export default function MarqueeRow({ 
   children, 
   direction = 'left',
-  speed = 30,
+  speed = 50,
   pauseOnHover = true
 }) {
   const isLeft = direction === 'left';

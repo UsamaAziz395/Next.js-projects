@@ -9,7 +9,7 @@ export default function WorkoutPlanner() {
         
         {/* Left Side: Phone Image */}
         <div className="relative flex justify-center lg:justify-start w-full">
-          <div className="relative w-full max-w-[300px] ">
+          <div className="relative w-full hidden md:block max-w-[300px] ">
             <Image
               src="/images/Analysisimage.avif"
               alt="Workout Planner App"
@@ -24,23 +24,33 @@ export default function WorkoutPlanner() {
         <div className="flex flex-col justify-center text-left">
         
           {/* Heading */}
-          <h2 className="text-2xl font-bold uppercase leading-tight tracking-tight mb-6 md:mb-8">
+          <h2 className=" text-xl md:text-2xl font-bold uppercase leading-tight tracking-tight mb-6 md:mb-8">
             Intuitive and Free Workout Planner
           </h2>
 
           {/* Subheading */}
-          <p className=" text-md font-bold text-white mb-4 md:mb-6">
-            With visualized progress, keep track of your fitness journey.
+          <p className=" text-md font-bold text-center md:text-start text-white mb-4 md:mb-6">
+            With visualized progress, keep track of your <br className='block md:hidden' /> fitness journey.
           </p>
 
           {/* Description */}
-          <p className="text-md text-white leading-relaxed max-w-md">
+          <p className="text-sm md:text-md text-white leading-relaxed w-full md:max-w-md">
             See your muscle recovery for safe workouts, your exercise achievements, how many calories you burned to keep you motivated, and a workout balance that shows which muscles need strengthening.
           </p>
 
         </div>
 
       </div>
+
+      <div className="relative w-full block md:hidden max-w-[300px] ">
+            <Image
+              src="/images/Analysisimage.avif"
+              alt="Workout Planner App"
+              width={600}
+              height={600}
+              className="w-full h-auto object-contain drop-shadow-2xl mx-23 mt-15"
+            />
+          </div>
     </section>
   );
 }

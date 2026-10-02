@@ -31,10 +31,10 @@ export default function PerfectPlanSection() {
       
       {/* Header Section */}
       <div className="text-center mb-16 max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight mb-4">
+        <h1 className=" text-2xl md:text-5xl font-bold uppercase tracking-tight mb-4">
           Find Your Perfect Plan
         </h1>
-        <p className="text-gray-400 text-lg md:text-xl">
+        <p className="text-gray-200 font-semibold text-lg md:text-xl">
           Whether you're a beginner or advanced, Planfit has a plan for your goal
         </p>
       </div>
@@ -44,18 +44,18 @@ export default function PerfectPlanSection() {
         {plans.map((plan) => (
           <div
             key={plan.id}
-            // Yahan hover par green border aayega, default mein gray border rahega
-            className="flex flex-col justify-between p-8 rounded-2xl transition-all duration-300 bg-[#2a2d35] border border-gray-700 hover:border-[#16e6a7]"
+          
+            className="flex flex-col justify-between p-8 rounded-2xl cursor-pointer transition-all duration-300 bg-[#2a2d35] md:hover:border-[#16e6a7]"
           >
             <div>
               <h2 className="text-2xl font-bold mb-4">{plan.title}</h2>
-              <p className="text-gray-400 leading-relaxed mb-8">
+              <p className="text-gray-200 leading-relaxed mb-8">
                 {plan.description}
               </p>
             </div>
             
-            {/* Start Free Button - Click par modal open hoga */}
-            <button 
+        
+            <Link  href="/onboarding"
               onClick={() => setIsModalOpen(true)}
               className="inline-flex items-center text-[#00e5a0] font-semibold hover:text-[#00c98a] transition-colors group w-fit"
             >
@@ -63,30 +63,21 @@ export default function PerfectPlanSection() {
               <span className="ml-2 transform group-hover:translate-x-1 transition-transform">
                 &rarr;
               </span>
-            </button>
+            </Link>
           </div>
         ))}
       </div>
 
       {/* Bottom CTA Section */}
       <div className="flex flex-col items-center justify-center gap-4">
-        <button className="bg-[#5cf0d5]  text-black font-bold text-lg px-12 py-4 rounded-full shadow-[0_0_15px_rgba(0,229,160,0.3)]">
+        <Link href= "/onboarding" className="bg-[#5cf0d5]  text-black font-bold text-lg px-12 py-4 rounded-full shadow-[0_0_15px_rgba(0,229,160,0.3)]">
           Find Your AI Plan
-        </button>
+        </Link>
         
         {/* Users Choice Badge */}
         <div className="flex items-center gap-2  text-sm mt-2">
           <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="16" 
-            height="16" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="#00e5a0" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-          >
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" >
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>

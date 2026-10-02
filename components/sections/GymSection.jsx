@@ -15,11 +15,11 @@ export default function NewToGymSection() {
       <div
       data-aos="fade-up"
        className="text-center max-w-4xl mx-auto mb-16">
-        <h2 className="text-4xl  font-extrabold uppercase tracking-tight mb-6 leading-tight">
+        <h2 className="text-2xl md:text-4xl  font-extrabold uppercase tracking-tight mb-6 leading-tight">
           New to the gym? No problem.
         </h2>
-        <p className="text-gray-300 text-lg md:text-xl font-medium max-w-3xl mx-auto">
-          Planfit helps you work out confidently — no personal trainer needed
+        <p className="text-gray-300 text-md md:text-xl font-medium max-w-3xl mx-auto">
+          Planfit helps you work out confidently — no personal <br className='block md:hidden'/> trainer needed
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export default function NewToGymSection() {
             
             {/* Green Checkmark Icon */}
             <div className="flex-shrink-0 mt-1">
-              <div className="w-7 h-7 rounded-full bg-[#00e5a0] flex items-center justify-center">
+              <div className=" w-4 md:w-7 h-4 md:h-7 rounded-full bg-[#00e5a0] flex items-center justify-center">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   width="12" 
@@ -50,7 +50,7 @@ export default function NewToGymSection() {
             </div>
 
             {/* Feature Text */}
-            <p className="text-lg md:text-xl font-semibold leading-relaxed text-gray-100">
+            <p className="text-sm md:text-xl font-semibold leading-tight md:leading-relaxed text-gray-100 opacity-100">
               {feature}
             </p>
             

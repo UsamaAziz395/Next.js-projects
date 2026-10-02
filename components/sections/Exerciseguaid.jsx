@@ -9,7 +9,7 @@ export default function ExerciseGuides() {
         
         {/* Left Side: Phone Image */}
         <div className="relative flex justify-center lg:justify-start w-full order-1 lg:order-1">
-          <div className="relative w-full max-w-[300px] skew-x-10">
+          <div className="relative w-full max-w-[300px] hidden md:block skew-x-10">
             <Image
               src="/images/exerciseguaid.avif"
               alt="Detailed Exercise Guide App"
@@ -25,17 +25,17 @@ export default function ExerciseGuides() {
         <div className="flex flex-col justify-center text-left order-2 lg:order-2">
           
           {/* Heading */}
-          <h2 className="text-2xl font-bold uppercase leading-tight tracking-tight mb-6 ">
-            Hundreds of Detailed Exercise Guides
+          <h2 className="text-center text-2xl font-bold uppercase leading-tight tracking-tight mb-6 ">
+            Hundreds of Detailed <br className='block md:hidden'/> Exercise Guides
           </h2>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6">
+          <p className=" text-sm md:text-lg font-bold text-center md:text-start text-white mb-4 md:mb-6">
             Maximize your workouts with proper form
           </p>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-white leading-relaxed tracking-tight max-w-2xl mb-8">
+          <p className="text-sm sm:text-lg text-white leading-tight tracking-tight max-w-2xl mb-8">
             Knowing which muscles to target leads you to better results. With our clear exercise videos, you'll learn that along with proper form. Detailed instructions cover proper form, trainer tips, alternatives, and even how to breathe while you work out.
           </p>
 
@@ -48,6 +48,17 @@ export default function ExerciseGuides() {
               height={400}
               className="w-full h-auto object-contain"
             /> */}
+          </div>
+
+           <div className="relative w-full block md:hidden max-w-[300px]">
+            <Image
+              src="/images/exerciseguaid.avif"
+              alt="Detailed Exercise Guide App"
+             width={600}
+              height={1200}
+              className="w-full h-auto object-contain drop-shadow-2xl"
+              priority
+            />
           </div>
 
         </div>

@@ -1,10 +1,20 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 import MarqueeRow from "@/components/ui/MarqueeRow";
 import { IoStar } from "react-icons/io5";
 import Image from "next/image";
-
+import Defian from "../../public/images/Defian.jpg";
+import Deez from "../../public/images/Deez.png"
+import Maya from "../../public/images/Maya.png";
+import christopher from "../../public/images/christopher.webp"
+import jason from "../../public/images/jason.jpg"
+import Saumya from "../../public/images/Saumya.png"
+import Gardunio from "../../public/images/Gardunio.png"
+import jusbran from "../../public/images/jusbran.png"
+import Okandi from "../../public/images/Okandi.png"
+import Robert from "../../public/images/Robert.jpg"
+// import Diego from "../../public/images/Diego.jpg"
 import appstorelogo from "../../public/images/appstorelogo.svg";
 import playstorelogo from "../../public/images/playstorelogo.svg";
 
@@ -13,6 +23,8 @@ export default function AnimatedCards() {
   const row1Cards = [
     {
       id: 1,
+      storeurl: "https://apps.apple.com/us/app/planfit-ai-gym-workout-planner/id1511876936",
+      image: Deez,
       title: "Deez1421",
       logo: appstorelogo,
       rating: (
@@ -24,11 +36,13 @@ export default function AnimatedCards() {
 
     {
       id: 2,
+      storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+         image: jason,
       title: "Jason Draven",
       logo: playstorelogo,
       rating: (
-        <> <IoStar /> <IoStar /> <IoStar /> <IoStar /> <IoStar /> </>
-      ),
+        <> <IoStar /> <IoStar /> <IoStar /> <IoStar /> <IoStar /> </>),
       description:
         "this is a great app so many exercises to choose from and it's awesome having my rest, timed so I don't sit on the machines for too long.",
       date: "Nov 4, 2025",
@@ -36,6 +50,9 @@ export default function AnimatedCards() {
 
     {
       id: 3,
+            storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+         image: Robert,
       title: "Robert Thomas",
       logo: playstorelogo,
       rating: (
@@ -48,6 +65,8 @@ export default function AnimatedCards() {
 
     {
       id: 4,
+         storeurl: "https://apps.apple.com/us/app/planfit-ai-gym-workout-planner/id1511876936",
+         image: jusbran,
       title: "@itsjusbran",
       logo: appstorelogo,
       rating: (
@@ -60,6 +79,9 @@ export default function AnimatedCards() {
 
     {
       id: 5,
+            storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+         image: christopher,
       title: "Christopher Cluck",
       logo: playstorelogo,
       rating: (
@@ -72,6 +94,9 @@ export default function AnimatedCards() {
 
     {
       id: 6,
+            storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+         image: Defian,
       title: "DefiantN8tv",
       logo: playstorelogo,
       rating: (
@@ -87,6 +112,8 @@ export default function AnimatedCards() {
   const row2Cards = [
     {
       id: 8,
+         storeurl: "https://apps.apple.com/us/app/planfit-ai-gym-workout-planner/id1511876936",
+         image: Okandi ,
       title: "Okanadi",
       logo: appstorelogo,
       rating: (
@@ -97,7 +124,10 @@ export default function AnimatedCards() {
     },
 
     {
-      id: 9,
+      id: 9, 
+            storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+          image: christopher,
       title: "Christopher Cluck",
       logo: playstorelogo,
       rating: (
@@ -111,6 +141,8 @@ export default function AnimatedCards() {
 
     {
       id: 10,
+         storeurl: "https://apps.apple.com/us/app/planfit-ai-gym-workout-planner/id1511876936",
+         image: Saumya,
       title: "Saum____ya",
       logo: appstorelogo,
       rating: (
@@ -124,6 +156,9 @@ export default function AnimatedCards() {
 
     {
       id: 11,
+            storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+
+         image: Maya,
       title: "Maya Stravinskaya",
       logo: playstorelogo,
       rating: (
@@ -137,6 +172,8 @@ export default function AnimatedCards() {
 
     {
       id: 12,
+         storeurl: "https://apps.apple.com/us/app/planfit-ai-gym-workout-planner/id1511876936",
+         image: Deez,
       title: "Deez1421",
       logo: appstorelogo,
       rating: (
@@ -149,6 +186,8 @@ export default function AnimatedCards() {
 
     {
       id: 13,
+      storeurl : "https://play.google.com/store/apps/details?id=com.mih.planfit&reviewId=dffcbc95-e818-43da-8a0a-695f97051bca",
+         image: Gardunio,
       title: "Bernadette Gardunio",
       logo: playstorelogo,
       rating: (
@@ -167,24 +206,36 @@ export default function AnimatedCards() {
       {/* Header */}
       <div className="mb-12 px-4 md:px-12">
         <h2 className="text-2xl font-bold uppercase leading-tight md:text-4xl">
-          backed of tens thousand of reviews
+          backed of tens of <br className="block md:hidden" /> thousand of reviews
         </h2>
       </div>
 
       {/* ROW 1*/}
 
-      <MarqueeRow direction="left" speed={30}>
+      <MarqueeRow direction="left" speed={50}>
         {row1Cards.map((card) => (
           <div
             key={card.id}
-            className=" relative flex-shrink-0 w-[280px] md:w-[410px] h-[220px] md:h-[240px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5 transition-colors hover:border-[#5df0c4]">
+            className=" relative flex-shrink-0  w-[420px] h-[220px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5 transition-colors hover:border-[#5df0c4]">
 
             {/* Top: Name + Logo */}
+
+            <Link href={card.storeurl} >
             <div className="flex items-center justify-between">
+
+              <div className="flex gap-2">
+             <Image
+                src={card.image}
+                alt="image"
+                width={24}
+                height={24}
+                className="h-6 w-6 object-contain rounded-full"/>
 
               <h3 className="text-lg font-bold">
                 {card.title}
               </h3>
+
+              </div>
 
               <Image
                 src={card.logo}
@@ -198,14 +249,14 @@ export default function AnimatedCards() {
 
 
             {/* Stars */}
-            <div className="mt-4 flex gap-1 text-[#18e0d0]">
+            <div className="mt-1 flex gap-1 text-[#18e0d0]">
               {card.rating}
             </div>
 
 
             {/* Description */}
             <p
-              className=" mt-4 text-sm font-medium leading-6  text-white line-clamp-4 " >
+              className=" mt-1 text-sm leading-6  text-white line-clamp-4 " >
               {card.description}
             </p>
 
@@ -215,26 +266,40 @@ export default function AnimatedCards() {
               className=" absolute  bottom-5 left-5  text-xs font-medium  text-gray-400 " >
               {card.date}
             </span>
-
+</Link>
           </div>
         ))}
       </MarqueeRow>
 
 
-      {/* ================= ROW 2 ================= */}
+      {/* ROW 2 */}
 
-      <MarqueeRow direction="right" speed={30}>
-        {row2Cards.map((card) => (
+      <MarqueeRow direction="right" speed={50}>
+         {row2Cards.map((card) => (
           <div
             key={card.id}
-            className="  relative  flex-shrink-0  w-[280px]  md:w-[420px]  h-[220px] md:h-[240px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5transition-colors hover:border-[#5df0c4]">
+            className=" relative flex-shrink-0 w-[280px] md:w-[400px] h-[220px] md:h-[240px] rounded-2xl border border-gray-700 bg-[#1a1c23] p-5 transition-colors hover:border-[#5df0c4]">
 
             {/* Top: Name + Logo */}
+
+            <Link href={card.storeurl}>
             <div className="flex items-center justify-between">
+
+              <div className="flex gap-2">
+                      <Image
+                src={card.image}
+                alt="image"
+                width={24}
+                height={24}
+                className="h-6 w-6 object-contain rounded-full"/>
 
               <h3 className="text-lg font-bold">
                 {card.title}
               </h3>
+
+              </div>
+
+             
 
               <Image
                 src={card.logo}
@@ -248,23 +313,25 @@ export default function AnimatedCards() {
 
 
             {/* Stars */}
-            <div className="mt-4 flex gap-1 text-[#18e0d0]">
+            <div className="mt-1 flex gap-1 text-[#18e0d0]">
               {card.rating}
             </div>
 
 
             {/* Description */}
             <p
-              className=" mt-4 text-sm font-medium leading-6 text-white line-clamp-4" >
+              className="mt-1 text-sm leading-6 text-white " >
               {card.description}
             </p>
 
 
             {/* DATE */}
             <span
-              className=" absolute bottom-5 left-5 text-xs font-medium  text-gray-400 ">
+              className="absolute bottom-5 left-5 text-xs font-medium  text-gray-400 " >
               {card.date}
             </span>
+
+            </Link>
 
           </div>
         ))}

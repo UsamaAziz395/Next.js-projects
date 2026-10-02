@@ -28,10 +28,10 @@ export default function Services() {
         
         {/* Header Section */}
         <div data-aos="fade-up" className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-4xl font-bold uppercase main-font tracking-tight mb-4">
+          <h2 className="text-lg md:text-4xl font-bold uppercase tracking-tight mb-4">
             Everything You Need To Train Easier
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg md:text-xl font-medium">
+          <p className="text-gray-300 text-md sm:text-lg md:text-xl font-medium">
             Planfit packs a full personal trainer experience into one free app
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function Services() {
               <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-white">
                 {feature.title}
               </h3>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+              <p className="text-gray-200 leading-relaxed text-sm md:text-base">
                 {feature.description}
               </p>
             </div>
