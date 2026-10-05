@@ -1,5 +1,6 @@
+workouts
+import exercises from "@/data/exercises/exercisesData";
 import workouts from "@/data/workouts";
-import exercises from "@/app/data/exercises";
 import Image from "next/image";
 
 
