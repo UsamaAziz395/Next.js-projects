@@ -1,9 +1,3 @@
-import barbell from '/images/exercises/barbell.png'
-
-
-
-
-
 
 const workouts = [
   {
