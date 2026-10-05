@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Stats() {
   return (
     <>
-    <section className="relative bg-[#1a1c23] opacity-100 text-white py-16 md:py-30 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden "
+    <section className="relative bg-[#1a1c23] opacity-100 text-white py-10 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden "
       
         style={{ backgroundImage: "url('/images/statbg.avif')" }}
 >

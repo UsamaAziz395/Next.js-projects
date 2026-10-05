@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white flex flex-col relative overflow-hidden z-10">
+    <main className="max-h-screen  bg-[#0a0a0a] mt-20 md:mt-0 text-white flex flex-col relative overflow-hidden z-10">
       
     
      <div  
-  className="absolute inset-0 mt-10 z-0 pointer-events-none" style={{ backgroundImage: "url('/images/hero-bg.avif')" }}
+  className="absolute inset-0 mt-10 z-0 pointer-events-none" style={{ backgroundImage: "url('/images/home/hero-bg.avif')" }}
 ></div>
       
       {/* Main Content Section */}
@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="flex-1 w-full flex justify-center md:justify-end relative">
        
           <div  data-aos="zoom-in"
-           className="relative w-[300px] md:w-[400px] lg:w-[500px] h-[400px] md:h-[500px]  bg-no-repeat   "    style={{ backgroundImage: "url('/images/twinphone.avif')",backgroundSize : '100%' }}>
+           className="relative w-[300px] md:w-[400px] lg:w-[500px] h-[400px] md:h-[500px]  bg-no-repeat   "    style={{ backgroundImage: "url('/images/home/twinphone.avif')",backgroundSize : '100%' }}>
 
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Hero() {
       <div className="md:hidden fixed bottom-0 left-0 w-full p-4 bg-[#0a0a0a]/90 backdrop-blur-sm z-50 flex justify-center border-t border-white/10">
        <Link
             href="/onboarding"
-                 className="bg-[#70e7c3] text-black font-bold text-lg px-8 py-4 rounded-full w-full max-w-sm shadow-[0_0_15px_rgba(0,229,160,0.5)]"> 
+                 className="bg-[#70e7c3] text-black text-center font-bold text-lg px-8 py-4 rounded-full w-full max-w-sm shadow-[0_0_15px_rgba(0,229,160,0.5)]"> 
                        Find Your AI Plan
           </Link>
 

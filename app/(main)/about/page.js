@@ -1,3 +1,7 @@
+import Link from "next/link";
+
+
+
 export default function Page() {
   // 1. Saara data ek array of objects mein
   const sections = [
@@ -31,13 +35,13 @@ export default function Page() {
     ]
 
   },
-   {   
-    title: " In the press",
-    items: ["Planfit raises seed funding — VentureSquare",
+  //  {   
+  //   title: " In the press",
+  //   items: ["Planfit raises seed funding — VentureSquare",
       
-    ]
+  //   ]
 
-  },
+  // },
   ];
 
   return (
@@ -76,6 +80,12 @@ export default function Page() {
 
           </div>
         ))}
+<div className="text-white  ">
+    <h1 className="text-xl font-bold" >In the press</h1>
+ <Link className="text-[#00ffdd] underline" href="https://www.venturesquare.net/846053">  
+ <p className=" font-mono py-5">Planfit raises seed funding — VentureSquare</p></Link> 
+</div>
+      
 
       </div>
     </section>

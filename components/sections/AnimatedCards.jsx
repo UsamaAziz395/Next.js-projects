@@ -4,20 +4,21 @@ import React from "react";
 import MarqueeRow from "@/components/ui/MarqueeRow";
 import { IoStar } from "react-icons/io5";
 import Image from "next/image";
-import Defian from "../../public/images/Defian.jpg";
-import Deez from "../../public/images/Deez.png"
-import Maya from "../../public/images/Maya.png";
-import christopher from "../../public/images/christopher.webp"
-import jason from "../../public/images/jason.jpg"
-import Saumya from "../../public/images/Saumya.png"
-import Gardunio from "../../public/images/Gardunio.png"
-import jusbran from "../../public/images/jusbran.png"
-import Okandi from "../../public/images/Okandi.png"
-import Robert from "../../public/images/Robert.jpg"
-import appstorelogo from "../../public/images/appstorelogo.svg";
-import playstorelogo from "../../public/images/playstorelogo.svg";
+import Deez from "../../public/images/Home/Deez.png"
+import jason from "../../public/images/Home/jason.jpg"
+import Robert from "../../public/images/Home/Robert.jpg"
+import jusbran from "../../public/images/Home/jusbran.png"
+import Defian from "../../public/images/Home/Defian.jpg"
+import christopher from "../../public/images/Home/christopher.webp"
+import Maya from "../../public/images/Home/Maya.png";
+import Saumya from "../../public/images/Home/Saumya.png"
+import Gardunio from "../../public/images/Home/Gardunio.png"
+import Okandi from "../../public/images/Home/Okandi.png"
+import appstorelogo from "../../public/images/Home/appstorelogo.svg";
+import playstorelogo from "../../public/images/Home/playstorelogo.svg";
 
-export default function AnimatedCards() {
+
+ function AnimatedCards() {
   // Row 1 ke cards
   const row1Cards = [
     {
@@ -106,6 +107,7 @@ export default function AnimatedCards() {
       date: "Nov 4, 2025",
     },
   ];
+
 
   // Row 2 ke cards
   const row2Cards = [
@@ -339,3 +341,6 @@ export default function AnimatedCards() {
     </section>
   );
 }
+
+
+export default AnimatedCards

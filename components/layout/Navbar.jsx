@@ -8,13 +8,13 @@ import Link from "next/link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
-    <nav className=" top-0 left-0 z-50 w-full bg-[#1F2025] text-white">
+    <nav className=" fixed top-0 left-0 z-50 w-full bg-[#1F2025] text-white">
 
       {/* Desktop Navbar*/}
 
-      <div className="mx-auto flex h-[80px] max-w-[1360px] items-center justify-between px-2 lg:px-25">
+      <div className=" mx-auto flex h-[80px] max-w-[1360px] items-center justify-between px-2 lg:px-25">
 
         {/* Logo */}
         <div className="flex-shrink-0">

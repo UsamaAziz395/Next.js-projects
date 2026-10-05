@@ -12,7 +12,10 @@ export default function Footer() {
 
           {/* Left Side: Logo and Copyright */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-extrabold tracking-tight">Planfit</h2>
+            <Link href= "/">
+             <h2 className="text-3xl font-extrabold tracking-tight">Planfit</h2>
+            </Link>
+           
             <p className="text-gray-200 text-sm">
               Copyright © 2026 Planfit Inc.
             </p>

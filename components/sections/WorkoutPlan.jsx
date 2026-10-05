@@ -10,7 +10,7 @@ export default function PersonalizedPlan() {
         backgroundImage: "url('/images/workoutplanbg.avif')",
         backgroundSize: "170%",
         backgroundRepeat: "no-repeat",
-        scale: 
+        
       }}
     >
 

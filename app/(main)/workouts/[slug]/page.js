@@ -1,6 +1,7 @@
-import workouts from "@/app/data/workouts";
+import workouts from "@/data/workouts";
 import exercises from "@/app/data/exercises";
 import Image from "next/image";
+
 
 
 export default async function WorkoutPage({ params }) {
@@ -17,10 +18,10 @@ export default async function WorkoutPage({ params }) {
   );
 
   return (
-    <main className="min-h-screen bg-[#1a1c23] text-white py-8 px-4 md:px-8">
+    <main className="min-h-screen bg-[#1a1c23] text-white py-2 px-4 md:px-8">
 
       {/* Main Container */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
 
         {/* Page Heading */}
         <div className="mb-6">
@@ -60,13 +61,16 @@ export default async function WorkoutPage({ params }) {
                 </div>
 
                 {/* Exercise Image Placeholder */}
-                <div className="w-20 h-20 md:w-24 md:h-20 shrink-0 rounded-xl bg-[#1f2025] flex items-center justify-center">
+                <div className="w-20 h-20 md:w-24 md:h-20 rounded-xl">
                   <span >
-                    <Image
-                    src={exercise.image} 
+                       <Image
+                    src={exercise.image}
                     alt={exercise.name}
-                    width={500}
-                    height={400}/>
+                   width={200}
+                   height={200}
+                    className="object-contain p-2"
+                  />
+                
                   </span>
                 </div>
 
