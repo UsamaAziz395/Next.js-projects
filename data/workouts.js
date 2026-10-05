@@ -1,8 +1,8 @@
-import barbell from '../../public/images/exercises/barbell.png'
-import Deadlift from '../../public/images/exercises/Deadlift.png'
-import Dumbell from '../../public/images/exercises/Dumbell.png'
-import Romanian from '../../public/images/exercises/Romanian.png'
-import Shoulderpress from '../../public/images/exercises/Shoulderpress.png'
+import barbell from '/images/exercises/barbell.png'
+
+
+
+
 
 
 const workouts = [
@@ -19,7 +19,7 @@ const workouts = [
           {
             id: 1,
             name: "Barbell Squat",
-            image: barbell,
+            image: '/images/exercises/barbell.png',
             sets: 3,
             reps: "8–12",
             rest: "60s",
@@ -27,7 +27,7 @@ const workouts = [
           {
             id: 2,
             name: "Deadlift",
-            image: Deadlift,
+            image:  '/images/exercises/Deadlift.png',
             sets: 3,
             reps: "8–12",
             rest: "60s",
@@ -35,7 +35,7 @@ const workouts = [
           {
             id: 3,
             name: "Dumbbell Shoulder Press",
-            image: Dumbell,
+            image: '/images/exercises/Dumbell.png',
             sets: 3,
             reps: "8–12",
             rest: "60s",
@@ -43,7 +43,7 @@ const workouts = [
           {
             id: 4,
             name: "Romanian Deadlift",
-            image: Romanian,
+            image: './images/exercises/Romanian.png',
             sets: 3,
             reps: "8–12",
             rest: "60s",
@@ -51,7 +51,7 @@ const workouts = [
           {
             id: 5,
             name: "Shoulder Press Machine",
-            image: Shoulderpress,
+            image: '/images/exercises/Shoulderpress.png',
             sets: 3,
             reps: "8–12",
             rest: "60s",
